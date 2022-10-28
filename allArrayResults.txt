@@ -1,0 +1,23 @@
+Results for the tinyArray
+insert 14.625 μs
+append 45.709 μs
+
+Results for the smallArray
+insert 21.375 μs
+append 50.709 μs
+
+Results for the mediumArray
+insert 138.667 μs
+append 104.875 μs
+
+Results for the largeArray
+insert 6.560875 ms
+append 421.833 μs
+
+Results for the extraLargeArray
+insert 791.433917 ms
+append 2.092375 ms
+
+The unshift() or insert function has O(n^2) time complexity and therefore takes longer to execute as the array sizes increase. The append function is shorter time complexity at O(n), it increases linearly while insert increases exponentially. 
+
+EC: The unshift method has to increment all the elements already in the array while the append or push method only has to insert at the end, the size of the array does not slow push().
